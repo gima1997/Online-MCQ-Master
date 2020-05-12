@@ -6,19 +6,18 @@
 //xlg - 5
 //xxlg - 7
 .questions {
-  background-color: antiquewhite;
-  border-left: 10px solid lightblue;
   width: 80%;
   margin: 3rem auto 0 auto;
   padding: 1.5rem 2rem;
 
   h5 {
-    font-size: 1.5rem;
-    margin-bottom: fill;
+    color: white;
+    text-shadow: 2px 2px 7px black;
+    font-size: 30px;
+    margin-bottom:5px;
+    margin-top: 30px;
     line-height: 1.5;
     text-align:left;
-    font-weight: bold;
-
   }
 
   .options-container {
@@ -29,32 +28,33 @@
   }
 
   .options {
-    background-color: cadetblue;
+    background-color: midnightblue;
     border-radius: 30px;
-    color: black;
+    text-shadow: 2px 2px 7px black;
+    color: white;
     cursor: pointer;
     margin: 1rem auto;
     padding: 1rem;
     transition: 0.3s linear all;
     text-align: center;
     width: 90%;
-    font-weight: bold;
+    font-size: 20px;
   }
 
   .options:hover {
-    background-color: darken(blue,20%);
+    background-color: darken(midnightblue,20%);
 
   }
 }
 .selected {
-  background: yellow !important;
+  background: darkgoldenrod !important;
 }
 
 .button-container {
   display: flex;
   justify-content: flex-start;
   //margin: 0 auto 0.5rem auto;
-  padding: 1rem;
+  padding: 4rem;
   width: 50%;
   margin-right: 20%;
   margin-left: 20%;
@@ -64,56 +64,32 @@
   border: none;
   color: white;
   cursor: pointer;
-  font-family: $quicksand;
   //margin-right: 85%;
   margin-left: 20%;
   margin-right: 20%;
   padding: 0.5rem 1.5rem;
 
 }
-.button-container button:first-child {
-   background-color: darken(blue,10%);
-  box-shadow: $shadow;
-
-  transition: 0.2s linear all;
-}
-.button-container button:first-child {
-  background-color: darken(blue, 20%);
-
-}
-//
-.button-container button:nth-child(2) {
-  background-color: darken(green,10%);
-  box-shadow: $shadow;
-  transition: 0.2s linear all;
-
-}
-.button-container button:nth-child(2) {
-  background-color: darken(lightgreen, 50%);
-}
 
 .finalHeading {
-  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 7px black;
   text-align: center;
 }
 
 .finalPara {
-  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 7px black;
   text-align: left;
-  margin-left: 5px;
+  margin-left: 32%;
+
 }
 
-.rightButton {
-  background-color: red;
-  border-radius: 30px;
-  color: black;
+#quit {
   cursor: pointer;
-
-  padding: 1rem;
-  transition: 0.3s linear all;
+  padding-bottom: 1rem;
   text-align: center;
-  width: 70%;
-  font-weight: bold;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 50%;
+  margin-left: 25%;
+
 }

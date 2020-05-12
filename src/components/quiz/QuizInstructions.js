@@ -9,21 +9,21 @@ const QuizInstructions = () => (
                 MCQ Instructions-Online MCQ Master
             </title>
         </Helmet>
-        <div className="instruction container">
-            <h1>
-                Instructions- උපදෙස්
+        <div className="instruction container" id ="instructions">
+            <h1 className="display-3">
+                Instructions - උපදෙස්
             </h1>
-            <p>
+            <p className="lead" id="p1">
                 Are you in english medium?
             </p>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <p>
+            <p className="lead" id="p2">
                 ඔබ සිංහල මාධ්‍යයෙන්ද?
             </p>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <div>
-                <span className="left"><Link to="/">No take me back</Link></span>
-                <span className="right"><Link to="/play/quiz">Ok,Let`s do this</Link></span>
+                <span><Link className="left btn btn-primary" to="/">No take me back</Link></span>
+                <span><Link className="right btn btn-primary" to="/play/quiz">Ok,Let`s do this</Link></span>
             </div>
         </div>
     </Fragment>
