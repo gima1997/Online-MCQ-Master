@@ -101,7 +101,7 @@ class play extends Component {
     quitHandler = () => {
         window.confirm('Are you sure want to quit? ');
         if (window.confirm('Are you sure want to quit? ')) {
-            this.props.history.push('/');
+            this.props.history.push('/play/home');
         }
     }
 
