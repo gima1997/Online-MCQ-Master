@@ -26,6 +26,7 @@ class play extends Component {
         this.setState(() => {
                 return {
                     question: QuizData[currentIndex].question,
+                    images:QuizData[currentIndex].images,
                     options: QuizData[currentIndex].options,
                     answer: QuizData[currentIndex].answer
                 }
@@ -152,7 +153,7 @@ class play extends Component {
 
 
     render() {
-        const {question, options, currentIndex, userAnswer, quizEnd, time} = this.state //get the current state
+        const {question,images, options, currentIndex, userAnswer, quizEnd, time} = this.state //get the current state
 
         if (quizEnd) {
             return (
@@ -225,6 +226,11 @@ class play extends Component {
                         <h5 className="display-3">
                             {question}
                         </h5>
+
+                    </div>
+                    {/*add diagram to the queastion*/}
+                    <div className="image">
+                        <img src={images}/>
                     </div>
                     <br/><br/>
                     <div className="options-container lead">

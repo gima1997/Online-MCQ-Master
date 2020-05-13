@@ -2,6 +2,7 @@ export const QuizData = [
     {
         id: 0,
         question: `What is the capital of Nigeria?`,
+        images:"https://www.encodedna.com/images/theme/jQuery.png",
         options: [`New Delhi`, `Abuja`, `Aba`, `Onisha`],
         answer: `Abuja`
     },
