@@ -40,6 +40,11 @@ class SignUpForm extends Component {
                 <div className="App__Form">
                     <div className="FormCenter">
                         <form className="FormFields" onSubmit={this.handleSubmit}>
+                            <div>
+                                <h3>New here?</h3>
+                                <p className="head1">Sign up and discover great amount of new mcq papers!</p>
+                            </div>
+                            <br/>
                             <div className="FormField">
                                 <label className="FormField__Label" htmlFor="name">Full Name</label>
                                 <input type="text" id="name" className="FormField__Input" placeholder="Enter your full name" name="name" />

@@ -9,10 +9,25 @@ h1 {
   font-weight: bold;
   color: white;
 }
+
+
 h2{
   text-align: center;
   font-size: 500%;
   color: black;
+}
+.head1{
+  color:black;
+  font-weight:bolder;
+}
+h3{
+  color: black;
+  font-weight: bold;
+}
+h6{
+  color: black;
+  font-weight:bold;
+  text-align: center;
 }
 .App__Aside {
   background: url("https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260");
@@ -70,6 +85,7 @@ h2{
   color: black;
   font-weight: 300;
   margin-bottom: 50px;
+  margin-top: 45%;
 }
 
 .FormTitle__Link {

@@ -42,6 +42,13 @@ import '../styles/base/_login.scss';
                                 cookiePolicy={'single_host_origin'}
                             />
                         </div>
+                        <br/>
+                        <br/>
+                        <div>
+                            <h6>
+                                Sri Lankan Largest Online A/L Mcq Platform
+                            </h6>
+                        </div>
                     </div>
 
                 </div>

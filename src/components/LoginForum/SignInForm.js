@@ -39,6 +39,11 @@ class SignInForm extends Component {
                 <div className="App__Form">
                     <div className="FormCenter">
                         <form onSubmit={this.handleSubmit} className="FormFields">
+                            <div>
+                                <h3>One of us?</h3>
+                                <p className="head1">If you already has an account, just sign in. We've missed you!</p>
+                            </div>
+                            <br/>
                             <div className="FormField">
                                 <label className="FormField__Label" htmlFor="email">E-Mail Address</label>
                                 <input type="email" id="email" className="FormField__Input" placeholder="Enter your email" name="email" value={this.state.email} onChange={this.handleChange} />
