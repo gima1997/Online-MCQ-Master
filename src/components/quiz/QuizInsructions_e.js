@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
 
-const QuizInstructions = () => (
+const QuizInstructions_e = () => (
     <Fragment>
         <Helmet>
             <title>
@@ -12,7 +12,7 @@ const QuizInstructions = () => (
         </Helmet>
         <div className="instruction container" id ="instructions">
             <h1 className="display-3">
-                 උපදෙස්...
+                Instructions...
             </h1>
             <br/>
             <br/>
@@ -28,7 +28,7 @@ const QuizInstructions = () => (
                 4.<br/>
                 5.<br/>
             </p>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <div>
                 <span><Link className="left btn btn-primary" to="/">No take me back</Link></span>
                 <span><Link className="right btn btn-primary" to="/play/quiz">Ok,Let`s do this</Link></span>
@@ -36,4 +36,4 @@ const QuizInstructions = () => (
         </div>
     </Fragment>
 );
-export default QuizInstructions;
+export default QuizInstructions_e;

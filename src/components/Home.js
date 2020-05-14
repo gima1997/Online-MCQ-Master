@@ -18,7 +18,7 @@ const Home =() => (
                         <div className="enter-button-container">
                             <ul>
                                 <li>
-                                    <Link className="enter-button lead" to="/play/instructions">
+                                    <Link className="enter-button lead" to="/play/stream">
                                         ENTER
                                     </Link>
                                 </li>

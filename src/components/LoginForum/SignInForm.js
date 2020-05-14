@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import "../../styles/base/_login.scss";
 
 class SignInForm extends Component {
     constructor(props) {
@@ -55,7 +56,7 @@ class SignInForm extends Component {
                             </div>
 
                             <div className="FormField">
-                                <button className="FormField__Button mr-20"><Link to="/play/home">Sign In</Link></button> <Link to="/sign-up" className="FormField__Link">Create an account</Link>
+                                <Link to="/play/home"><button className="FormField__Button mr-20">Sign In</button></Link> <Link to="/sign-up" className="FormField__Link">Create an account</Link>
                             </div>
                         </form>
                     </div>
