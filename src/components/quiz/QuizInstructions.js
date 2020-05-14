@@ -35,5 +35,5 @@ const QuizInstructions = () => (
             </div>
         </div>
     </Fragment>
-);
+); 
 export default QuizInstructions;
