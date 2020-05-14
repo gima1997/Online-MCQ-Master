@@ -7,18 +7,22 @@ import play from "./components/quiz/play";
 import QuizSummery from "./components/quiz/QuizSummery";
 import SignInForm from "./components/LoginForum/SignInForm";
 import SignUpForm from "./components/LoginForum/SignUpForm";
+import Leaderboard from "./components/quiz/Leaderboard"
 
 
 function App() {
+  //dont change leaderboard route
   return (
     <Router>
         <Route path="/" exact component={Login} />
         <Route path="/sign-in" exact component={SignInForm} />
         <Route path="/sign-up" exact component={SignUpForm} />
+        <Route path="/play/quiz/leaderboard" component={Leaderboard} />          
         <Route path="/play/home" exact component={Home} />
         <Route path="/play/instructions" exact component={QuizInstructions} />
         <Route path="/play/Quiz" exact component={play} />
         <Route path="/play/quizSummery" exact component={QuizSummery} />
+        
 
 
 
