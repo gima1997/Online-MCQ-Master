@@ -11,14 +11,14 @@ const CommerceStream = () => (
             </title>
         </Helmet>
         <div>
-            <h2>
+            <h2 className="display-3">
                 Commerce stream - වාණිජ ධාරාව
             </h2>
         </div>
         <div>
             <div className="row">
                 <div className="column">
-                    <a href="/play/medium">
+                    <a className="subject lead" href="/play/medium">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -27,7 +27,7 @@ const CommerceStream = () => (
                     </a>
                 </div>
                 <div className="column">
-                    <a href="/play/medium">
+                    <a className="subject lead" href="/play/medium">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -36,7 +36,7 @@ const CommerceStream = () => (
                     </a>
                 </div>
                 <div className="column">
-                    <a href="/play/medium">
+                    <a className="subject lead" href="/play/medium">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -45,7 +45,7 @@ const CommerceStream = () => (
                     </a>
                 </div>
                 <div className="column">
-                    <a href="/play/medium">
+                    <a className="subject lead" href="/play/medium">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -54,7 +54,7 @@ const CommerceStream = () => (
                     </a>
                 </div>
                 <div className="column">
-                    <a href="/play/medium">
+                    <a className="subject lead" href="/play/medium">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -63,7 +63,7 @@ const CommerceStream = () => (
                     </a>
                 </div>
                 <div className="column">
-                    <a href="/play/medium">
+                    <a className="subject lead" href="/play/medium">
                         <span></span>
                         <span></span>
                         <span></span>

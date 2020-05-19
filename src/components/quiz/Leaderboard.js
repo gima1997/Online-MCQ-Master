@@ -2,7 +2,7 @@ import React, {Fragment} from "react";
 import {Helmet} from "react-helmet";
 import {Link,Route,Switch,useRouteMatch, useParams} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Scorecard from "./Leaderboard.scorcard";
+import Scorecard from "./Leaderboard.scorecard";
 import {scores} from "./QuizScoreData";
 
 const Score =({name,index,score,rank})=>{
@@ -22,14 +22,16 @@ const Leaderboard =() => {
        return(
         <div>
         <h2 id="lead" className="text-center">Score Leaderboard</h2>
+            <h3>Please select a subject</h3>
+            <div className="score-buttons">
+            <Link  className="btn btn-primary scorecard" to={`${url}/physics`}>Physics</Link>
+            <Link  className="btn btn-primary scorecard" to={`${url}/maths`}>Maths</Link>
+            <Link className="btn btn-primary scorecard" to={`${url}/chemistry`}>chemistry</Link>
+            </div>
             <div>
-            <Link  className="btn btn-primary" to={`${url}/physics`}>Physics</Link>
-            <Link  className="btn btn-primary" to={`${url}/maths`}>Maths</Link>
-            <Link className="btn btn-primary" to={`${url}/chemistry`}>chemistry</Link>
-  
             <Switch>
             <Route exact path={path}>
-            <h3>Please select a subject</h3>
+
             </Route>
             <Route path={`${path}/:subjectId`}>
             <Scorecard useParams={useParams} />

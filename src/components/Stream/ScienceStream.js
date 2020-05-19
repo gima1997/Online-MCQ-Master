@@ -11,14 +11,14 @@ const ScienceStream = () => (
             </title>
         </Helmet>
         <div>
-            <h2>
+            <h2 className="display-3">
                 Science Stream - විද්‍යා ධාරාව
             </h2>
         </div>
         <div>
             <div className="row">
                 <div className="column">
-                    <a href="/play/medium">
+                    <a className="subject lead" href="/play/medium">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -27,7 +27,7 @@ const ScienceStream = () => (
                     </a>
                 </div>
                 <div className="column">
-                    <a href="/play/medium">
+                    <a className="subject lead" href="/play/medium">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -36,7 +36,7 @@ const ScienceStream = () => (
                     </a>
                 </div>
                 <div className="column">
-                    <a href="/play/medium">
+                    <a className="subject lead" href="/play/medium">
                         <span></span>
                         <span></span>
                         <span></span>

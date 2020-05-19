@@ -41,8 +41,8 @@ class SignInForm extends Component {
                     <div className="FormCenter">
                         <form onSubmit={this.handleSubmit} className="FormFields">
                             <div>
-                                <h3>One of us?</h3>
-                                <p className="head1">If you already has an account, just sign in. We've missed you!</p>
+                                <h3 className="display-3">One of us?</h3>
+                                <p className="head1 lead">If you already has an account, just sign in. We've missed you!</p>
                             </div>
                             <br/>
                             <div className="FormField">
@@ -56,7 +56,8 @@ class SignInForm extends Component {
                             </div>
 
                             <div className="FormField">
-                                <Link to="/play/home"><button className="FormField__Button mr-20">Sign In</button></Link> <Link to="/sign-up" className="FormField__Link">Create an account</Link>
+                                <Link to="/play/home"><button className="FormField__Button mr-20">Sign In</button></Link>
+                                <Link to="/sign-up" className="FormField__Link">Create an account</Link>
                             </div>
                         </form>
                     </div>

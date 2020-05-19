@@ -11,7 +11,7 @@ const FirstSelection = () => (
             </title>
         </Helmet>
         <div>
-            <h2>
+            <h2 className="display-3">
                 Select your stream<br/>
                 ඔබේ ධාරාව තෝරන්න
             </h2>
@@ -19,7 +19,7 @@ const FirstSelection = () => (
         <div>
             <div className="rowa">
                 <div className="column">
-                    <a href="/play/science">
+                    <a className="subject lead" href="/play/science">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -27,8 +27,9 @@ const FirstSelection = () => (
                         SCIENCE/විද්‍යා
                     </a>
                 </div>
+                <br/>
                 <div className="column">
-                    <a href="/play/commerce">
+                    <a className="subject lead" href="/play/commerce">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -36,8 +37,9 @@ const FirstSelection = () => (
                         COMMERCE/වාණිජ
                     </a>
                 </div>
+                <br/>
                 <div className="column">
-                    <a href="/play/art">
+                    <a className="subject lead" href="/play/art">
                         <span></span>
                         <span></span>
                         <span></span>

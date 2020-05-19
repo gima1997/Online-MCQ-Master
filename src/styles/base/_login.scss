@@ -16,32 +16,33 @@ h2{
   font-size: 500%;
   color: black;
 }
-.head1{
-  color:black;
-  font-weight:bolder;
-}
-h3{
-  color: black;
-  font-weight: bold;
-}
-h6{
-  color: black;
-  font-weight:bold;
+
+h3,h5,.head1{
+  color: white;
+  text-shadow: 2px 2px 3px black;
   text-align: center;
-  font-size: 105%;
 }
+
+
 .App__Aside {
   background: url("https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260");
   background-size: cover;
-  width: 100%;
+  width: 65%;
   height: 100%;
 }
-
 .App__Form {
   width: 35%;
-  background-color: royalblue;
+  background-color:  midnightblue;
   padding: 25px 40px;
   overflow: auto;
+}
+@media screen and (max-width: 992px) {
+  .App__Aside {
+    width: 35%;
+  }
+  .App__Form {
+    width: 65%;
+  }
 }
 
 .PageSwitcher {
@@ -59,12 +60,12 @@ h6{
   border: none;
   outline: none;
   display: inline-block;
-  text-decoration: none;
 }
 
-.PageSwitcher__Item--Active {
+.PageSwitcher__Item:hover{
   background-color: #5ED0C0;
   color: white;
+  text-decoration: none;
 }
 
 .PageSwitcher__Item:first-child {
@@ -76,21 +77,22 @@ h6{
   border-bottom-right-radius: 25px;
 }
 .second {
-  margin-left: 28%;
+  text-align:center;
 }
+
 .FormCenter {
   margin-bottom: 100px;
 }
 
 .FormTitle {
-  color: black;
+  color: white;
   font-weight: 300;
   margin-bottom: 50px;
   margin-top: 45%;
 }
 
 .FormTitle__Link {
-  color: black;
+  color: white;
   text-decoration: none;
   display: inline-block;
   font-size: 1.7em;
@@ -134,11 +136,11 @@ h6{
 }
 
 .FormField__Input::placeholder {
-  color: black;
+  color: white;
 }
 
 .FormField__Button {
-  background-color: #52C4B9;
+  background-color: #445366;
   color: white;
   border: none;
   outline: none;
@@ -147,17 +149,26 @@ h6{
   font-size: .8em;
   font-weight: 500;
 }
+.FormField__Button:hover{
+  background-color: #5ED0C0;
+  color: white;
+  text-decoration: none;
+}
+
 
 .FormField__Link {
-  color: black;
-  text-decoration: none;
+  color: white;
   display: inline-block;
   border-bottom: 1.5px solid #225E62;
   padding-bottom: 5px;
 }
+.FormField__Link:hover{
+  text-decoration: none;
+  color: #5ED0C0;
+}
 
 .FormField__CheckboxLabel {
-  color: black;
+  color:white;
   font-size: .9em;
 }
 
@@ -173,4 +184,11 @@ h6{
   display: inline-block;
   padding-bottom: 2px;
   margin-left: 5px;
+}
+.FormField__TermsLink:hover{
+  text-decoration: none;
+  color: powderblue;
+}
+.FormField__CheckboxLabel{
+  z-index: 9999;
 }

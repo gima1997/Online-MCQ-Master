@@ -32,9 +32,6 @@ function App() {
         <Route path="/play/Quiz" exact component={play} />
         <Route path="/play/quizSummery" exact component={QuizSummery} />
         <Route path="/play/quiz/leaderboard" exact component={Leaderboard} />
-
-
-
     </Router>
   );
 }
