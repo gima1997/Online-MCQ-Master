@@ -11,7 +11,7 @@ const Select = () => (
             </title>
         </Helmet>
         <div>
-            <h2>
+            <h2 className="display-3">
                 Select your medium<br/>
                 ඔබේ මාධ්‍යය තෝරන්න
             </h2>
@@ -19,7 +19,7 @@ const Select = () => (
         <div>
             <div className="row2">
                 <div className="column">
-                    <a href="/play/instructions">
+                    <a className="subject lead" href="/play/instructions">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -27,8 +27,9 @@ const Select = () => (
                         සිංහල මාධ්‍යය
                     </a>
                 </div>
+                <br/>
                 <div className="column">
-                    <a href="/play/instructions_e">
+                    <a className="subject lead" href="/play/instructions_e">
                         <span></span>
                         <span></span>
                         <span></span>

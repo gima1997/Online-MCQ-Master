@@ -14,19 +14,19 @@ body{
   margin-right: 5%;
 }
 .rowa{
-  margin-left: 37%;
+  margin-left: 10%;
   margin-top: 10%;
   margin-right: 5%
 }
 
 .row2{
-  margin-left: 37%;
+  margin-left: 10%;
   margin-top: 10%;
 }
 h2{
-
   font-size: 50px;
-  color: darkblue;
+  text-shadow: 2px 2px 5px black;
+  color: white;
   font-weight: bold;
   margin-top: 2.5%;
 }
@@ -34,20 +34,26 @@ a{
   position: relative;
   display: inline-block;
   padding: 15px 30px;
-  color: #2196f3;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 4px;
-  text-decoration: none;
   font-size: 24px;
   overflow: hidden;
   transition: 0.2s;
+  text-shadow: 2px 2px 5px black;
 }
-a:hover {
-  color: black;
+
+
+.subject{
+  font-size: 40px;
+}
+
+a.subject:hover {
+  color: powderblue;
   background: #2196f3;
   box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3 ;
   transition-delay: 1s;
-
+  text-decoration: none;
 }
 
 a span {
@@ -108,3 +114,12 @@ a:hover span:nth-child(4){
   transition: 1s;
   transition-delay: 0.75s;
 }
+
+
+@media screen and (max-width: 600px) {
+  .subject{
+    display: inline-block;
+    font-size: 30px;
+  }
+  }
+

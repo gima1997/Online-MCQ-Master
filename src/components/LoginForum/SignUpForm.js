@@ -9,8 +9,10 @@ class SignUpForm extends Component {
             password: '',
             name: '',
             hasAgreed: false
+
         };
 
+        this.getValue = this.getValue.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -31,6 +33,12 @@ class SignUpForm extends Component {
         console.log('The form was submitted with the following data:');
         console.log(this.state);
     }
+    getValue(e){
+        e.preventDefault();
+        this.setState({
+            hasAgreed: e.target.checked
+        })
+    }
 
     render() {
         return (
@@ -39,10 +47,10 @@ class SignUpForm extends Component {
                 </div>
                 <div className="App__Form">
                     <div className="FormCenter">
-                        <form className="FormFields" onSubmit={this.handleSubmit}>
+                        <form action="#" className="FormFields" onSubmit={this.handleSubmit}>
                             <div>
-                                <h3>New here?</h3>
-                                <p className="head1">Sign up and discover great amount of new mcq papers!</p>
+                                <h3 className="display-4">New here?</h3>
+                                <p className="head1 lead">Sign up and discover great amount of new mcq papers!</p>
                             </div>
                             <br/>
                             <div className="FormField">
@@ -58,9 +66,9 @@ class SignUpForm extends Component {
                                 <input type="email" id="email" className="FormField__Input" placeholder="Enter your email" name="email" />
                             </div>
                             <div className="FormField">
-                                <label className="FormField__CheckboxLabel">
-                                    <input className="FormField__Checkbox" type="checkbox" name="hasAgreed" />I agree all statement in
-                                    <a href="" className="FormField__TermsLink">terms of services</a>
+                                <label className="FormField__CheckboxLabel lead" htmlFor="checkbox">
+                                    <p>I agree all statement in</p>
+                                    <a href="/" className="FormField__TermsLink lead">terms of services</a>
                                 </label>
                             </div>
                             <div className="FormField">

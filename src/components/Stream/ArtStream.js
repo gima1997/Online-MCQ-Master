@@ -10,14 +10,14 @@ const ArtStream = () => (
             </title>
         </Helmet>
         <div>
-            <h2>
+            <h2 className="display-3">
                 Art Stream - කලා ධාරාව
             </h2>
         </div>
         <div>
             <div className="row">
                 <div className="column">
-                    <a href="/play/medium">
+                    <a className="subject lead" href="/play/medium">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -26,7 +26,7 @@ const ArtStream = () => (
                     </a>
                 </div>
                 <div className="column">
-                    <a href="/play/medium">
+                    <a className="subject lead" href="/play/medium">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -35,7 +35,7 @@ const ArtStream = () => (
                     </a>
                 </div>
                 <div className="column">
-                    <a href="/play/medium">
+                    <a className="subject lead" href="/play/medium">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -44,7 +44,7 @@ const ArtStream = () => (
                     </a>
                 </div>
                 <div className="column">
-                    <a href="/play/medium">
+                    <a className="subject lead" href="/play/medium">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -53,7 +53,7 @@ const ArtStream = () => (
                     </a>
                 </div>
                 <div className="column">
-                    <a href="/play/instruction">
+                    <a className="subject lead" href="/play/instruction">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -62,7 +62,7 @@ const ArtStream = () => (
                     </a>
                 </div>
                 <div className="column">
-                    <a href="/play/instructions">
+                    <a className="subject lead" href="/play/instructions">
                         <span></span>
                         <span></span>
                         <span></span>

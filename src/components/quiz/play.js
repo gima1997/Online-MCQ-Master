@@ -1,7 +1,6 @@
 import React, {Component, Fragment} from "react";
 import {Helmet} from "react-helmet";
 import {Link} from "react-router-dom";
-
 import {QuizData} from '../quiz/QuizData';
 
 
@@ -76,7 +75,6 @@ class play extends Component {
 
         }
     }
-
 
     componentWillUnmount() {
         clearInterval(this.interval);
@@ -188,7 +186,8 @@ class play extends Component {
                         <button onClick={this.quitHandler} className="btn btn-danger" id="quit">
                             Quit
                         </button>
-                        <Link className="btn btn-primary" to="/play/quiz/leaderboard">Leaderboard</Link>
+                        <br/>
+                        <Link className="btn btn-primary leaderboard" to="/play/quiz/leaderboard">Leaderboard</Link>
                     </div>
                 </div>
             )

@@ -2,18 +2,12 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router} from "react-router-dom";
 import GoogleLogin from "react-google-login";
 
-import '../styles/base/_login.scss';
+class Login extends Component {
 
-
-
-  class Login extends Component {
       responseGoogle=(response)=>{
           console.log(response);
           console.log(response.profileObj);
-
-
       }
-
     render() {
         return(
             <Router>
@@ -28,29 +22,27 @@ import '../styles/base/_login.scss';
                             <a href="sign-up/"  className="PageSwitcher__Item">Sign Up</a>
                         </div>
                         <div>
-                            <h2>
-                                Or
-                            </h2>
                         </div>
                         <br/>
                         <div className="second">
                             <GoogleLogin
                                 clientId="271963913071-3uuk0lb7j7dq2q7vq2qlfnue4t515h0e.apps.googleusercontent.com"
-                                buttonText="     Login with google   "
+                                buttonText="Login with google"
                                 onSuccess={this.responseGoogle}
                                 onFailure={this.responseGoogle}
                                 cookiePolicy={'single_host_origin'}
+                                disabled={false}
+                               // isSignedIn={true}
                             />
                         </div>
                         <br/>
                         <br/>
                         <div>
-                            <h6>
+                            <h5>
                                 Sri Lankan Largest Online A/L Mcq Platform
-                            </h6>
+                            </h5>
                         </div>
                     </div>
-
                 </div>
             </Router>
     );

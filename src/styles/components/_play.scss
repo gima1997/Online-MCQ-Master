@@ -85,7 +85,7 @@
 
 }
 
-#quit {
+#quit  {
   cursor: pointer;
   padding-bottom: 1rem;
   text-align: center;
@@ -95,4 +95,32 @@
 }
 .image{
   margin-left: 40%;
+}
+@media screen and (max-width: 600px) {
+  .image{
+    margin-left: 40%;
+    align-content: center;
+  }
+  .image img{
+    width: 70%;
+    height: auto;
+  }
+}
+.leaderboard{
+  display: block;
+  cursor: pointer;
+ margin-top: 10px;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.scorecard{
+  display:inline-block;
+  cursor: pointer;
+  margin: 10px 0px 0px 10px;
+  text-align: center;
+}
+.score-buttons{
+  text-align:center;
 }
